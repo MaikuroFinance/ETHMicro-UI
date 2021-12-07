@@ -5,15 +5,6 @@ permalink: /system-diagrams/
 nav_order: 4
 ---
 
-
----
-layout: page
-title: "System Diagrams"
-permalink: /system-diagrams/
-nav_order: 4
----
-
-
 ### Minting ETHMICRO and ETHKEY / Depositing ETH
 This diagram displays an overview of the process for Minting ETHMI and ETHKEY
 
@@ -60,5 +51,5 @@ This diagram displays an overview of the process for Minting ETHMI and ETHKEY
 {: refdef}
 
 1. User1 initiates a transfer 1000 ETHKey to User2
-2. All rewards associated with the 1000 ETHKey are redistributed back into the ETHKey contract pool
+2. All rewards associated with the 1000 ETHKey are redistributed back into the ETHKey contract pool which is distributed across all holders of ETHKey at that time at an equal rate per ETHKey
 3. User2 receives 1000 ETHKey
