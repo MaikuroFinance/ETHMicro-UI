@@ -1,0 +1,766 @@
+.App {
+  text-align: center;
+  /* background-color: transparent; */
+}
+
+html {
+  /* background-color: #1a1a1a; */
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+}
+
+code {
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace; */
+}
+
+.row {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.container-fluid {
+  align-self: center;
+  color: white;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  background-color: transparent;
+}
+
+input.transparent-input {
+  border: none !important;
+}
+
+input[type="number"] {
+  color: red;
+}
+
+.transparent-input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none !important;
+  color: white;
+  max-width: 500px;
+}
+
+input.transparent-input {
+  background-color: rgba(16, 15, 15, 0.687) !important;
+  border: none !important;
+  color: white;
+}
+input.transparent-input:focus {
+  color: rgb(223, 223, 223);
+}
+
+input.transparent-input::placeholder {
+  color: rgb(223, 223, 223);
+}
+
+.form-control {
+  background: white;
+  border: none;
+  color: white;
+}
+
+.App-header {
+  background-color: transparent;
+  min-height: 100vh;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+button.wallet-button {
+  margin-bottom: 10px;
+  width: 175px;
+  height: 50px;
+  color: white;
+  border: none;
+  font-weight: 100;
+  background: rgb(26, 26, 26);
+  background: linear-gradient(
+    to top right,
+    rgba(26, 26, 26, 0.03) 0%,
+    rgba(5, 152, 210, 0.626) 55%
+  );
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+@media screen and (max-width: 400px) {
+  .wallet-status {
+    font-size: 0.9em;
+  }
+}
+
+div.app-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  max-width: 550px;
+  float: center;
+}
+
+.app-button {
+  width: fit-content;
+  margin-top: 2%;
+  float: middle;
+  text-align: left;
+  color: white;
+  font-weight: 150;
+  margin-bottom: 3%;
+  background: rgb(26, 26, 26);
+  background: linear-gradient(
+    to top right,
+    rgba(26, 26, 26, 0.03) 0%,
+    rgba(5, 152, 210, 0.626) 55%
+  );
+  margin-block: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+button.action-button {
+  color: white;
+  font-weight: 100;
+  font-size: 1.2em;
+  width: fit-content;
+  border-radius: 0.3em;
+  border: none;
+  background: linear-gradient(
+    to top right,
+    rgba(26, 26, 26, 0.03) 0%,
+    rgba(5, 152, 210, 0.626) 55%
+  );
+  margin-top: 4%;
+}
+
+#box {
+  margin-top: 1px;
+}
+
+.profile {
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 15px;
+}
+
+.colData {
+  margin-left: 1%;
+  /* outline:#393a3d;
+  outline-style: dotted; */
+  word-break: break-all;
+}
+
+.rowData {
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.dataTitle {
+  text-align: left;
+  margin-top: 6%;
+  margin-bottom: 2%;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.input-panel {
+}
+
+.input-area {
+  margin-top: 100px;
+
+  max-width: 550px;
+  justify-content: center;
+  float: center;
+  margin: auto;
+
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 850px) {
+  .input-card {
+    min-width: 325px;
+    min-height: 150px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .input-card {
+    min-width: 300px;
+    min-height: 250px;
+  }
+}
+
+.toggle-box {
+  justify-content: center;
+  align-items: center;
+}
+
+.appButton {
+  color: white;
+  font-weight: 150;
+  margin-bottom: 3%;
+  background: rgb(26, 26, 26);
+  background: linear-gradient(
+    to top right,
+    rgba(26, 26, 26, 0.03) 0%,
+    rgba(5, 152, 210, 0.626) 55%
+  );
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/*
+   * Custom translucent site header
+   */
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color 0.15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+   * Dummy devices (replace them with your own or something else entirely!)
+   */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+/*
+   * Extra utilities
+   */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+.subheadline {
+  width: 80%;
+  height: 300px;
+  border-radius: 21px 21px 0 0;
+  color: black;
+  font-size: xx-large;
+  font-family: var(--bs-body-font-family);
+}
+
+.subheadline-light {
+  width: 80%;
+  height: 300px;
+  border-radius: 21px 21px 0 0;
+  color: white;
+  font-size: xx-large;
+  font-family: var(--bs-body-font-family);
+}
+
+.description {
+  background-color: #443f3f;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.ethKey-img {
+  transform: rotate(270deg);
+}
+
+.token-description {
+  font-size: 150%;
+  font-weight: 150;
+}
+
+.token-description-right {
+  font-size: 150%;
+  float: right;
+  text-align: right;
+}
+
+.token-description-left {
+  font-size: 150%;
+}
+
+.token-description-title {
+  text-align: left;
+  float: left;
+}
+
+.card-group {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+/* img {  
+    max-width: 100%;  
+    height: 100%;  
+    }   */
+
+@media screen and (min-width: 550px) {
+  button.launch-button {
+    background: rgb(26, 26, 26);
+    background: linear-gradient(
+      to top right,
+      rgba(26, 26, 26, 0.03) 0%,
+      rgba(5, 152, 210, 0.626) 55%
+    );
+    width: 150px;
+    color: white;
+    border: none;
+    font-weight: 100;
+    font-size: 1em;
+    border-radius: 0.3em;
+    transition: 0.5s;
+    background-size: 200% auto;
+  }
+
+  button.launch-button-bottom {
+    background: rgb(26, 26, 26);
+    background: linear-gradient(
+      to top right,
+      rgba(26, 26, 26, 0.03) 0%,
+      rgba(5, 152, 210, 0.626) 55%
+    );
+    margin-top: 20px;
+    width: 300px;
+    height: 75px;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    font-weight: 100;
+    transition: 0.5s;
+    background-size: 200% auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  button.launch-button {
+    background: rgb(26, 26, 26);
+    background: linear-gradient(
+      to top right,
+      rgba(26, 26, 26, 0.03) 0%,
+      rgba(5, 152, 210, 0.626) 55%
+    );
+    width: 150px;
+    color: white;
+    border: none;
+    font-weight: 100;
+    border-radius: 0.3em;
+    transition: 0.5s;
+    background-size: 200% auto;
+  }
+
+  button.launch-button-bottom {
+    background: rgb(26, 26, 26);
+    background: linear-gradient(
+      to top right,
+      rgba(26, 26, 26, 0.03) 0%,
+      rgba(5, 152, 210, 0.626) 55%
+    );
+    margin-top: 20px;
+    width: 160px;
+    height: 50px;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 100;
+    transition: 0.5s;
+    background-size: 200% auto;
+  }
+}
+
+.launch-button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  margin-left: 5px;
+}
+
+.brand-logo {
+  margin-top: 2.5px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 850px) {
+  .logo-flex {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .about-card {
+    width: 400px;
+    height: 200px;
+    color: white;
+    font-weight: 150;
+    margin-bottom: 5%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(26, 26, 26);
+    background: linear-gradient(
+      to top right,
+      rgba(26, 26, 26, 0.03) 0%,
+      rgba(5, 152, 210, 0.626) 55%
+    );
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .logo-flex {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-card {
+    width: 300px;
+    height: 200px;
+    color: white;
+    font-weight: 150;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(26, 26, 26);
+    background: linear-gradient(
+      to top right,
+      rgba(26, 26, 26, 0.03) 0%,
+      rgba(5, 152, 210, 0.626) 55%
+    );
+  }
+  .about-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.logo-container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+
+.about-container {
+  width: 90%;
+  max-width: 1350px;
+}
+
+.token-desription-subtitle {
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+.token-desription-title {
+  margin-bottom: 20px;
+  font-weight: 120;
+}
+
+.token-description-text {
+  font-weight: 100;
+}
+
+/* NAVBAR  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+.nav-container {
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.navbar {
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+#nav-section {
+  font-size: 1.5rem;
+  margin: 5% 7%;
+}
+.navbar-brand {
+  font-size: 2rem;
+  transition: 0.2s ease-in-out;
+}
+.navbar-brand:hover {
+  transform: scale(1.1);
+}
+.nav-link {
+  margin-left: 25px;
+  transition: 0.2s ease-in-out;
+}
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+input[type="radio"] {
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.form-check-radio {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.form-check-label {
+  letter-spacing: 0.1em;
+  font-weight: 100;
+  font-size: 1.3em;
+  margin-left: 5px;
+}
+
+.form-check-input {
+  width: 100px;
+}
+
+.data-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 50px;
+  max-width: 550px;
+  float: center;
+}
+
+.destination-input {
+  margin: auto;
+  max-width: 350px;
+}
+
+.token-input {
+  margin-top: 25px;
+  max-width: 250px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+nav.navbar {
+  background-color: #161718 !important;
+}
+/*  */
+
+span.navbar-brand {
+  background-color: black;
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+  margin-top: 5px;
+}
+
+.footer-link {
+  float: center;
+  margin-left: 10px;
+}
+
+.max-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.function-radios {
+  margin-top: 55px;
+}
+
+@media screen and (max-width: 700px) {
+  .wallet-status-flex {
+    margin-top: 35px;
+    width: 190px;
+    word-wrap: break-word;
+  }
+
+  .logo-plus-app {
+    font-size: 2em;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+
+  .wallet-status {
+    margin-top: 10px;
+  }
+
+  .logo-plus-app {
+    font-size: 1em;
+  }
+
+  .about-logo {
+    width: 80px;
+    height: 125px;
+  }
+
+  .app-logo-flex {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-top: 120px;
+  }
+
+  .app-logo {
+    height: 125px;
+    width: 80px;
+  }
+
+  .logo-title {
+    font-family: var(--bs-body-font-family);
+    font-size: 120%;
+    font-weight: 100;
+    margin-left: 1%;
+  }
+  .logo-plus {
+    font-weight: 400;
+    font-size: 1em;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  .lead {
+    font-size: 175%;
+    font-weight: 100;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .wallet-status-flex {
+    margin-top: 35px;
+    margin-left: 50px;
+    max-width: 190px;
+    word-wrap: break-word;
+  }
+
+  .logo-plus-app {
+    font-size: 2em;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+
+  .about-logo {
+    width: 150px;
+    height: 235px;
+  }
+
+  .app-logo-flex {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-top: 150px;
+    margin-right: 50px;
+  }
+
+  .app-logo {
+    height: 150px;
+    width: 96px;
+  }
+
+  .lead {
+    font-size: 250%;
+    font-weight: 100;
+    margin-bottom: 90px;
+  }
+
+  .logo-title {
+    font-family: var(--bs-body-font-family);
+    font-size: 250%;
+    font-weight: 100;
+    margin-left: 1%;
+  }
+  .logo-plus {
+    font-weight: 400;
+    font-size: xx-large;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 4em;
+  }
+}
+
+.app-margins {
+  margin-left: 15px;
+  margin-right: 15px;
+}

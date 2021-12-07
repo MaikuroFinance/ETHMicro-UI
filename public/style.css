@@ -1,0 +1,72 @@
+/* html {
+  background-color: #0e0d0d;
+} */
+
+/* @font-face {
+  font-family: arcadeFont;
+  src: url(Emulogic-zrEw.ttf);
+} */
+/* @font-face {
+  font-family: arcadeFont;
+  src: url(AtlantisInternational-jen0.ttf);
+} */
+/* 
+body {
+  font-family: arcadeFont;
+} */
+
+/* #root {
+  font-family: arcadeFont;
+} */
+
+.docLink {
+  font-family: var(--bs-body-font-family);
+  text-align: center;
+  display: block;
+  color: rgb(224, 81, 38);
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: xxx-large;
+  letter-spacing: 3px;
+}
+
+.title {
+  font-family: var(--bs-title-font-family);
+  font-weight: 100;
+  color: white;
+  --min-font-size: 64;
+  --max-font-size: 128;
+  position: relative;
+  text-align: center;
+  display: block;
+  margin-top: 2%;
+}
+
+@media screen and (min-width: 320px) {
+  .title {
+    font-size: calc(
+      var(--min-font-size) * 1px + (var(--max-font-size) - var(--min-font-size)) *
+        ((100vw - 320px) / 680)
+    );
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .title {
+    font-size: calc(var(--max-font-size) * 1px);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .star-container {
+    margin-left: 9%;
+  }
+}
+
+.navbar-brand {
+  font-weight: 100;
+}
+
+/* .appButton {
+  font-family: starWars;
+} */
