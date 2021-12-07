@@ -7,7 +7,7 @@ nav_order: 3
 
 # System Overview
 
-The micro ecosystem is compromised of two ERC20 tokens with some interesting opportunities for yield
+The micro ecosystem is compromised of two ERC20 tokens, a collateralized micro token and key token. This provides a mechanism for arbitrage against ETH and a risk-free opportunity to earn yield.
 {: .fs-6 .fw-300 }
 
 ## Main System Utilities
@@ -25,20 +25,19 @@ Example: Sendong 1000 ETHMI and 1000 ETHkey will burn the tokens and send you ba
 
 ### ETHMi Total Supply
 
-There is no initial supply of ETHMI. The supply increases only from minting and decreases from redemption burn.
+The total supply of ETHMI is 1000 times the ETH deposited in the contract. This ensures that ETH Micro is always collateralized and redeemable for ETH. It also prevents the bank-run issues that leveraged platforms must contend with.
 
 ### ETHkey Total Supply
 
-The initial total supply of ETHkey is 100,000,000. This initial supply is intended to create a market that allows ETHMI holders the opportunity to acquire extra ETHkey for the redemption of their ETHMI earnings. The ETHkey supply will increase and decrease from minting ETHMI and decrease from the redemption burn of ETHMI.
+The initial total supply of ETHkey is 100,000,000. This initial excess supply is intended to provide an early-adopter incentive with increased payouts and ensure there is adequate ETHKey liquidity for redemptions. In addition, the additional ETHKey supply will be 1000x the ETH deposited.
 
 ### ETHMI Transfer Fee
 
-Every transaction of ETHMI has a fee of %0.625 which is deducted from the amount sent so sending 
-100 ETHMI would result in 99.375 ETHMI being delivered. 
+Every transaction of ETHMI has a fee of %0.625 which is deducted from the amount sent so sending 100 ETHMI would result in 99.375 ETHMI being delivered. 60% of this fee is sent to all ETHMI holders at an equal rate per ETHMI. 40% of the this fee is sent to all ETHKey holders at an equal rate per ETHKEY.
 
 ### Minting Fee
 
-There is a 2% fee to create ETHkey when minting ETHMI. This 2% fee is sent to the ETHkey pool from the newly minted ETHMI balance.
+There is a 2% fee to create ETHkey when minting ETHMI. This 2% fee is distributed to all ETHKEY holders rewards balances at an equal rate per ETHKey.  
 Example:
 Send 1 ETH to mint 1000 ETHMI and 1000 ETHkey. Sending address receives 980 ETHMI (1000 - 2%( 20 ETHmi) = 980 ETHmi) and 1000 ETkey.
 
@@ -50,4 +49,6 @@ The balance of an address holding ETHMI automatically grows from receiving a por
 
 40% of the 0.625% ETHMI transfer fee is sent to the ETHkey reward pool. Each held ETHkey accumulates a redeemable portion of new ETHMI in the ETHkey rewards pool. The amount assigned to each ETHkey is based on the percentage of total supply each ETHkey represents at the time in the network. An address holding ETHkey can check the underlying balance of ETHMI by connecting to the ETHMI app. ETHMI that is assigned to ETHkey can be redeemed by unlocking ETH from the ETHMI smart contract.
 
-Caution! Transferring ETHkey to another address resets the assigned ETHMI back to zero, and transfers any prior assigned ETHMI back into the pool to be distributed amongst the ETHkey holders. Hold ETHkey in an address that you plan on connecting to the ETHMI app for redemption.
+### ETHKEY Transfer Impact on Rewards
+
+Transferring ETHKEY will cause the rewards associated with the transferred tokens to be distributed among all other ETHKEY holders at the time. This is to reward holders of ETHKEY and ensure liquidity pools do not accumulate significant ETHKEY rewards.
