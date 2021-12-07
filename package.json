@@ -1,8 +1,8 @@
 {
-  "name": "micro-eth",
+  "name": "eth-micro",
   "version": "0.0.1",
   "license": "MIT",
-  "description": "Micro-eth",
+  "description": "ETHMicro",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -14,7 +14,7 @@
     "artifacts"
   ],
   "repository": {
-    "url": "https://github.com/WinstonSmith198/micro-eth.git"
+    "url": "https://github.com/MaikuroFinance/ETHMicro-UI"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

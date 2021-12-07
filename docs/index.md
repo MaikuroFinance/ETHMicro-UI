@@ -2,7 +2,7 @@
 layout: default
 title: Home
 nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+description: "ETH Micro is a fully collateralized and decentralized token that provides a utility to arbitrage traders and yield to holders"
 permalink: /
 ---
 
