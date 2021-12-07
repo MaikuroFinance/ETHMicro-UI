@@ -15,6 +15,7 @@ following these instructions from Metamask (also listed below)
 https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask
 
 ETH Micro Address: 0x9f35d0d0a2c46293Adad9D16fD847445b100EFB8
+
 ETH Key Address: 0x9f35d0d0a2c46293Adad9D16fD847445b100EFB8
 
 ## Minting and Redeeming
