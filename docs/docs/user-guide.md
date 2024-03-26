@@ -24,7 +24,7 @@ The functions of the system are minting ETHmicro and ETHkey with ETH and redeemi
 
 ### Minting
 
-Minting ETHmicro and ETHkey is as simple as going to https://ethmicro.finance and clicking the 'Launch App' button in the top menu.
+Minting ETHmicro and ETHkey is as simple as going to https://ethmicro.com and clicking the 'Launch App' button in the top menu.
 
 Then click the 'Treasury' radio button and ensure the slider is on 'Mint'.
 

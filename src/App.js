@@ -206,9 +206,9 @@ function App() {
                 © 2021 Copyright:{" "}
                 <a
                   className="text-white justify-content-center"
-                  href="https://ethmicro.finance"
+                  href="https://ethmicro.com"
                 >
-                  ethmicro.finance
+                  ethmicro.com
                 </a>
               </div>
             </div>

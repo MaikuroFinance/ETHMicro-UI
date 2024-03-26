@@ -389,7 +389,7 @@ function About(setAbout) {
             <div className="text-white justify-content-center">
               © 2021 Copyright:{" "}
               <a className="text-white justify-content-center" href="localhost">
-                ethmicro.finance
+                ethmicro.com
               </a>
             </div>
           </div>
